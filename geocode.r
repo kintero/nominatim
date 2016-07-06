@@ -26,6 +26,7 @@ nominatim <- function(location, output = c('latlon','latlona','more','all'),
   require(XML)
   require(stringr)
   require(plyr)
+  library(jsonlite)
 
   house <- FALSE
   if (is.list(location)) {
